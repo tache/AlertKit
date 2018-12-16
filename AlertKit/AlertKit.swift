@@ -142,7 +142,7 @@ extension UIViewController {
         - parameter message: The message content of the alert/action sheet.
         - parameter alertActions: An array of alert action in UIAlertAction class.
     */
-    public func showAlert(_ title: String?, message: String?, preferredStyle: UIAlertControllerStyle, alertActions: [UIAlertAction]) {
+    public func showAlert(_ title: String?, message: String?, preferredStyle: UIAlertController.Style, alertActions: [UIAlertAction]) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
 
         for alertAction in alertActions {
